@@ -9,8 +9,8 @@ export default function DashboardLayout({
 }) {
   return (
     <div className="flex min-h-screen bg-[#0F0F14] text-foreground font-sans">
-      <div className="border-r border-white/5 bg-[#151520]/80 backdrop-blur-xl h-screen flex flex-col hidden md:flex sticky top-0 py-6">
-        <Sidebar className="w-64" />
+      <div className="w-64 border-r border-white/5 bg-[#151520]/80 backdrop-blur-xl h-screen flex-col hidden md:flex sticky top-0 py-6">
+        <Sidebar />
       </div>
 
       <div className="flex-1 flex flex-col relative overflow-hidden">
