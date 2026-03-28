@@ -3,14 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { MessageSquare, LayoutDashboard, Sparkles, LogOut, TrendingUp } from "lucide-react";
+import { MessageSquare, LayoutDashboard, Sparkles, LogOut, TrendingUp, Zap } from "lucide-react";
 
 export function Sidebar() {
   const pathname = usePathname();
 
   const links = [
     { href: "/dashboard", label: "My AI Plan", icon: LayoutDashboard },
-    { href: "/dashboard/practice", label: "Studio Practice", icon: MessageSquare },
+    { href: "/dashboard/training", label: "Live Training", icon: Zap },
+    { href: "/dashboard/practice", label: "Practice Studio", icon: MessageSquare },
     { href: "/dashboard/progress", label: "Analytics", icon: TrendingUp },
   ];
 

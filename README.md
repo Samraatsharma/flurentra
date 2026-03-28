@@ -1,5 +1,9 @@
 # Flurentra — AI English Coach
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-flurentra--8zli.vercel.app-6C5CE7?style=for-the-badge&logo=vercel&logoColor=white)](https://flurentra-8zli.vercel.app)
+
+🌐 **Live Site:** [https://flurentra-8zli.vercel.app](https://flurentra-8zli.vercel.app)
+
 An AI-powered English learning platform for Hindi-speaking users. Built with Next.js, Tailwind CSS, Framer Motion, and Google Gemini AI.
 
 ## Features
