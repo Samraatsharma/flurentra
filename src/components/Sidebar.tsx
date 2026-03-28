@@ -54,11 +54,13 @@ export function Sidebar() {
       <div className="mt-auto pt-6 border-t border-white/10 px-2 mb-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#6C5CE7] to-[#00D4FF] flex items-center justify-center font-bold text-white shadow-lg">
-              S
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#6C5CE7] to-[#00D4FF] flex items-center justify-center font-bold text-white shadow-lg uppercase">
+              {typeof window !== 'undefined' ? (localStorage.getItem('user_name')?.[0] || 'U') : 'U'}
             </div>
             <div>
-              <p className="text-sm font-bold text-white tracking-wide">Learner</p>
+              <p className="text-sm font-bold text-white tracking-wide">
+                {typeof window !== 'undefined' ? (localStorage.getItem('user_name') || 'Learner') : 'Learner'}
+              </p>
               <p className="text-[10px] uppercase text-[#00D4FF] tracking-widest font-bold">Pro Member</p>
             </div>
           </div>
